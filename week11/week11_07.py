@@ -7,12 +7,21 @@ class Point:
     def __init__(self, x=0.0 , y= 0.0):
         self.x = x
         self.y = y
-
+    def __str__(self):
+        #기본:타입+인스턴스주소 문자열 반환
+        #재정의 할 때 조건, 무조건 문자열 반환
+        #(0,0)
+        return f"x:{self.x},y:{self.y}"
+        
 p = Point()
 p = Point(1,2)
 p = Point(x=1)
 p = Point(y=1)
 print(p.x, p.y)
+print(p)
+print(1)
+print(1.1)
+print([1,2])
 
 class Rectangle:
     def __init__(self, x=0.0, y=0.0, w=0.0, h=0.0):

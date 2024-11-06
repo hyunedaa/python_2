@@ -30,6 +30,10 @@ class Rectangle:
         self.width = w
         self.height = h
 
+    #현재 사각형의 둘레를 구해서 반환하는 메소드
+    def getRoundLength(self):  # << self 무조건 넣자 
+        return (self.width * 2) + (self.height * 2)
+
 
 class Subject:
     def __init__(self,num, nm, t=None, g=None):
